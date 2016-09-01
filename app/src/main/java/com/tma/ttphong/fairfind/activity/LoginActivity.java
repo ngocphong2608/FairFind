@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.tma.ttphong.fairfind.R;
-import com.tma.ttphong.fairfind.fragment.ListBuyingProductFragment;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 

@@ -11,14 +11,14 @@ import com.tma.ttphong.fairfind.R;
 /**
  * Created by ttphong on 9/1/2016.
  */
-public class ListBuyingProductFragment extends Fragment {
+public class ListSoldProductFragment extends Fragment {
     @Override
     public View onCreateView(
             LayoutInflater inflater,
             ViewGroup container,
             Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_list_buying_product, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_list_selling_product, container, false);
         return rootView;
     }
 }

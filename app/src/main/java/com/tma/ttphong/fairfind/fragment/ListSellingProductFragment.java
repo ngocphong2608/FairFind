@@ -18,7 +18,7 @@ public class ListSellingProductFragment extends Fragment {
             ViewGroup container,
             Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_list_selling_product, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_list_buying_product, container, false);
         return rootView;
     }
 }

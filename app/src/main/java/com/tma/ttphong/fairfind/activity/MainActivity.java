@@ -1,29 +1,19 @@
 package com.tma.ttphong.fairfind.activity;
 
-import android.content.Context;
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-
-import android.widget.TextView;
 
 import com.tma.ttphong.fairfind.R;
 import com.tma.ttphong.fairfind.adapter.DynamicPagerAdapter;
-import com.tma.ttphong.fairfind.fragment.ListBuyingProductFragment;
 import com.tma.ttphong.fairfind.fragment.ListSellingProductFragment;
+import com.tma.ttphong.fairfind.fragment.ListSoldProductFragment;
 import com.tma.ttphong.fairfind.fragment.ProfileFragment;
 
 import java.util.ArrayList;
@@ -70,8 +60,8 @@ public class MainActivity extends AppCompatActivity{
         }};
 
         List<Class> fragmentTypes = new ArrayList<Class>() {{
-            add(ListBuyingProductFragment.class);
             add(ListSellingProductFragment.class);
+            add(ListSoldProductFragment.class);
             add(ProfileFragment.class);
         }};
         mAdapter = new DynamicPagerAdapter(this, pageTiles, fragmentTypes);

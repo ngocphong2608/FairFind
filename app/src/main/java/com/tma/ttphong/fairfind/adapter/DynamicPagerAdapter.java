@@ -1,6 +1,5 @@
 package com.tma.ttphong.fairfind.adapter;
 
-import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 
@@ -66,9 +65,5 @@ public class DynamicPagerAdapter
         }
 
         return null;
-    }
-
-    public interface OnFragmentInteraction {
-
     }
 }
