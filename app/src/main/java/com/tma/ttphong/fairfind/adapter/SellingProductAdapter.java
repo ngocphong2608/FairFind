@@ -80,7 +80,7 @@ public class SellingProductAdapter extends ArrayAdapter {
             if (result != null) {
                 bmImage.setImageBitmap(result);
             } else {
-//                bmImage.setImageBitmap(mDefaultPhoto);
+//                bmImage.setImageBitmap();
             }
         }
     }

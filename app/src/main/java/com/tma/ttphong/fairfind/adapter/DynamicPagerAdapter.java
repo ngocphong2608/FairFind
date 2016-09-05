@@ -2,6 +2,7 @@ package com.tma.ttphong.fairfind.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
 public class DynamicPagerAdapter
         extends android.support.v4.app.FragmentPagerAdapter {
 
+    private String TAG = "DynamicPagerAdapter";
     private List<Class> mFragmentTypes;
     private List<String> mPageTitles;
 
@@ -49,6 +51,7 @@ public class DynamicPagerAdapter
             }
             catch (Exception ex) {
                 // TODO: log the error
+                Log.e(TAG, ex.getMessage());
             }
         }
 

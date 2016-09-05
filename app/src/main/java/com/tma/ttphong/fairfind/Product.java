@@ -1,9 +1,11 @@
 package com.tma.ttphong.fairfind;
 
+import java.io.Serializable;
+
 /**
  * Created by ttphong on 9/1/2016.
  */
-public class Product {
+public class Product implements Serializable{
     private int mImageResourceId;
     private int mNumberMessage;
 
